@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<title>Christmas Card</title>
 	<meta name="viewport"
-		content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi">
+		content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi;">
 	</meta>
 	<link rel="stylesheet" href="./style.css" />
 	<link rel="stylesheet" href="./snowstyle.css" />
@@ -27,14 +27,15 @@
 				</div>
 			</div>
 			<div class="card-page cart-page-bottom">
-				<p style="font-family: 'iCiel Hipsteria', serif;font-size: 25px;"> Thay mặt ông già Noel
+				<p id="greeting" style="font-family: 'iCiel Hipsteria', serif;font-size: 25px;"> Thay mặt ông già Noel
 					và các chú Tuần Lộc,
 					xin chúc em
 					một Giáng Sinh an lành
-					và nhiều niềm vui. <br>
+					và nhiều niềm vui. <br><br>
 					Merry Christmas!
+					<br>♥
 				</p>
-
+				
 			</div>
 		</div>
 		</div>
@@ -48,7 +49,19 @@
 		</span>
 		<!-- partial -->
 		<script src="./min.js"></script>
-		<script src="./script.js"></script>
+		<script src="./script.js"></script>1
+		<script>
+            function adjustFontSize() {
+                var greeting = document.getElementById('greeting');
+                if (window.innerWidth < 768) { 
+                    greeting.style.fontSize = '18px';
+                } else {
+                    greeting.style.fontSize = '25px'; 
+                }
+            }
+            window.addEventListener('load', adjustFontSize);
+            window.addEventListener('resize', adjustFontSize);
+        </script>
 	</section>
 	<!-- partial:index.partial.html -->
 
