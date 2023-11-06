@@ -13,7 +13,9 @@ body {
   padding: 0;
 
 }
-
+#greeting {
+  display: none;
+}
 .card {
   perspective: 1500px;
   position: absolute;
