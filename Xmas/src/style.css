@@ -176,19 +176,19 @@ body {
 }
 @media (max-width: 767px) {
   .cart-page-inside,
-.cart-page-bottom {
-    border: 10px solid #d4d1d0;
-  }
+  .cart-page-bottom {
+      border: 10px solid #d4d1d0;
+    }
 }
 
 .cart-page-inside {
   transform: rotateY(-180deg);
   border-right: none !important;
-  background-position: 0px 80px;
+  background-position: 0px 60px;
 }
 @media (max-width: 767px) {
   .cart-page-inside {
-    background-position: 0px 30px;
+    background-position: 0px 10px;
   }
 }
 @media (max-width: 479px) {
@@ -216,19 +216,26 @@ body {
 .merry-christmas {
   /* transform: rotate(-20deg); */
   display: block;
+  
+  
 }
 /* .merry-christmas img {
   width: 350px;
   height: auto;
 } */
 .merry-christmas img {
-  content: url("https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/398172853_2569055136588826_1551316962868419497_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGLlGNXYrFa-N0nE_I1fmRlCYiCF3MJEzkJiIIXcwkTOS-8eJTPaFlXb6YuwqBqglDezWtbldmyfzYRhhzhb4DV&_nc_ohc=DuAQ9S8C-csAX8sQknE&_nc_ht=scontent.fhan3-3.fna&oh=00_AfBT1gZntZEA8X3PJ61YuLPtQnE50VE-vx1_JetUKt8jFA&oe=654D963F");
+  content: url("https://raw.githubusercontent.com/christmas2023/christmas2023.github.io/main/Xmas/images/baothi.jpg");
   width: 100%; 
   height: 100%;
 }
 @media (max-width: 767px) {
   .merry-christmas img {
-    width: 200px;
+    width: 180px;
+    
+  }
+  .merry-christmas{
+    margin-bottom: 20px ;
+    margin-right: 10px;
   }
 }
 @media (max-width: 479px) {
