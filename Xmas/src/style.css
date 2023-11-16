@@ -224,7 +224,7 @@ body {
   height: auto;
 } */
 .merry-christmas img {
-  content: url("https://raw.githubusercontent.com/christmas2023/christmas2023.github.io/main/Xmas/images/baothi.jpg");
+  content: url("https://raw.githubusercontent.com/christmas2023/christmas2023.github.io/main/Xmas/images/baothi.jpg"); 
   width: 100%; 
   height: 100%;
 }
