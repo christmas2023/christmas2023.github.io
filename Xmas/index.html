@@ -14,9 +14,6 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Style+Script&display=swap">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rowdies&display=swap">
 
-
-
-
 </head>
 
 <body>
@@ -25,7 +22,7 @@
 		<img src="./images/santa-body.png" alt="deer" class="santa-body">
 		<img src="./images/santa-hand.png" alt="deer" class="santa-hand">
 	</div>
-	<section style="pointer-events: none;">
+	<section style="pointer-events: all;">
 		<div><iframe width="100%" height="20" scrolling="no" frameborder="no" allow="autoplay"
 				src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1181152639&color=241414&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 		</div>
@@ -45,23 +42,25 @@
 						<span class="merry-christmas">
 							<img />
 								
-								<div id="name-text" class="textcontainer">
-									<span  class="particletext hearts" style="font-family: 'Style Script', serif;font-size: 35px; opacity: 100%; color: rgb(85, 86, 99);">Bảo Thi</span>
+								<div style="padding-top: -50%;">
+									<span  class="particletext hearts" style="font-family: 'Style Script', serif;font-size: 35px;">                    </span>
 								 </div>
 						</span>
 						
 					</div>
 				</div>
 				<div class="card-page cart-page-bottom">
-					<p id="greeting" style="font-family: 'Style Script', serif;font-size: 25px; color: #3d4c41;"> Thay mặt ông già
+					<p id="greeting" class="greeting" style="font-family: 'Style Script', serif;font-size: 25px; color: #3d4c41;">
+						Thay mặt ông già
 						Noel
 						và các chú Tuần lộc,
 						chúc em	một Giáng Sinh an lành
-						và nhiều niềm vui. <br><br>
+						và nhiều niềm vui.
+						<br>
+						<br>
 						Merry Christmas!
 						<br>♥
 					</p>
-
 				</div>
 			</div>
 		</div>
@@ -83,27 +82,25 @@
 			});
 			function adjustFontSizeAndLoad() {
 				var greeting = document.getElementById('greeting');
-				var name = document.getElementById('name-text');
 				var merryChristmas = document.querySelector('.merry-christmas');
 				greeting.style.marginLeft = '10%';
 				greeting.style.marginRight = '10%';
 				if (window.innerWidth < 768) {
-					greeting.style.fontSize = '12px';
-					name.style.marginTop = '-20%';
-					name.style.marginBottom = '10%';
-					merryChristmas.style.width = '90%'; 
-					merryChristmas.style.paddingTop = '10%'; 
-				}
-				else {
+					// greeting.style.fontSize = '12px';
+					merryChristmas.style.width = '100%'; 
+					merryChristmas.style.paddingTop = '5%'; 
+				} else if (window.innerWidth < 767) {
+					// greeting.style.fontSize = '12px';
+					merryChristmas.style.width = '100%'; 
+					merryChristmas.style.paddingTop = '5%'; 
+				} else {
 					merryChristmas.style.width = '100%';
 				}
+				
 			}
 		</script>
 	</section>
-	<!-- partial:index.partial.html -->
-
 </body>
-
 </html><script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="./src/min.js"></script>
 <script src="./src/script.js"></script>
