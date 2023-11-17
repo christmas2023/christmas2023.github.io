@@ -5,17 +5,22 @@
 	<meta charset="UTF-8" />
 	<title>Christmas Card</title>
 	<meta name="viewport" ;
-		content="width=device-width initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi;">
+		content="width=device-width initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; target-densityDpi=device-dpi">
 	</meta>
 	<link rel="stylesheet" href="./src/style.css" />
 	<link rel="stylesheet" href="./src/snowstyle.css" />
 	<link rel="stylesheet1" href="./src/santa-deer.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playball&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Style+Script&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rowdies&display=swap">
+
+
 
 
 </head>
 
 <body>
-	<div class="santa-claus">
+	<div class="santa-claus" style="z-index: 1;">
 		<img src="./images/santa-deer.png" alt="deer" class="santa-deer">
 		<img src="./images/santa-body.png" alt="deer" class="santa-body">
 		<img src="./images/santa-hand.png" alt="deer" class="santa-hand">
@@ -39,15 +44,19 @@
 
 						<span class="merry-christmas">
 							<img />
+								
+								<div id="name-text" class="textcontainer">
+									<span  class="particletext hearts" style="font-family: 'Style Script', serif;font-size: 35px; opacity: 100%; color: rgb(85, 86, 99);">Bảo Thi</span>
+								 </div>
 						</span>
+						
 					</div>
 				</div>
 				<div class="card-page cart-page-bottom">
-					<p id="greeting" style="font-family: 'iCiel Hipsteria', serif;font-size: 25px;"> Thay mặt ông già
+					<p id="greeting" style="font-family: 'Style Script', serif;font-size: 25px; color: #3d4c41;"> Thay mặt ông già
 						Noel
-						và các chú Tuần Lộc,
-						xin chúc em
-						một Giáng Sinh an lành
+						và các chú Tuần lộc,
+						chúc em	một Giáng Sinh an lành
 						và nhiều niềm vui. <br><br>
 						Merry Christmas!
 						<br>♥
@@ -67,21 +76,25 @@
 		</span>
 
 		<!-- partial -->
-		<script src="./src/min.js"></script>
-		<script src="./src/script.js"></script>
+		
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 				adjustFontSizeAndLoad();
 			});
 			function adjustFontSizeAndLoad() {
 				var greeting = document.getElementById('greeting');
+				var name = document.getElementById('name-text');
 				var merryChristmas = document.querySelector('.merry-christmas');
+				greeting.style.marginLeft = '10%';
+				greeting.style.marginRight = '10%';
 				if (window.innerWidth < 768) {
-					greeting.style.fontSize = '14px';
-					merryChristmas.style.width = '120px'; 
-				} else if (window.innerWidth < 767) {
-					merryChristmas.style.width = '200px';
-				} else {
+					greeting.style.fontSize = '12px';
+					name.style.marginTop = '-20%';
+					name.style.marginBottom = '10%';
+					merryChristmas.style.width = '90%'; 
+					merryChristmas.style.paddingTop = '10%'; 
+				}
+				else {
 					merryChristmas.style.width = '100%';
 				}
 			}
@@ -91,4 +104,6 @@
 
 </body>
 
-</html>
+</html><script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="./src/min.js"></script>
+<script src="./src/script.js"></script>
